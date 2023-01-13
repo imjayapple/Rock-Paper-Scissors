@@ -29,3 +29,9 @@ const getComputerChoice = () => {
             return 'scissors';
     }
 };
+
+//Test the function by calling it multiple times and printing the results to the console
+
+console.log(getComputerChoice());
+console.log(getComputerChoice());
+console.log(getComputerChoice());

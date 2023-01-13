@@ -31,7 +31,13 @@ const getComputerChoice = () => {
 };
 
 //Test the function by calling it multiple times and printing the results to the console
+// console.log(getComputerChoice());
+// console.log(getComputerChoice());
+// console.log(getComputerChoice());
 
-console.log(getComputerChoice());
-console.log(getComputerChoice());
-console.log(getComputerChoice());
+//Compare the results of the human versus the computer, human win, computer win & tie scenario
+const determineWinner = (userChoice, computerChoice) => {
+    if (userChoice === computerChoice) {
+        return 'The game is a tie!';
+    }
+}

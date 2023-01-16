@@ -65,3 +65,20 @@ const determineWinner = (userChoice, computerChoice) => {
         }
     }
 };
+
+//Test a tie scenario, a win scenario and a lose scenario
+console.log(determineWinner('paper', 'paper'));
+console.log(determineWinner('rock', 'scissors'));
+console.log(determineWinner('paper', 'scissors'));
+
+//Create a function to start the game and log the results
+const playGame = () => {
+    const userChoice = getUserChoice('rock');
+    const computerChoice = getComputerChoice();
+    console.log('You threw: ' + userChoice);
+    console.log('The computer threw: ' + computerChoice);
+    console.log(determineWinner(userChoice, computerChoice))
+  };
+  
+
+playGame();

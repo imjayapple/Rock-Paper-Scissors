@@ -2,7 +2,7 @@
 //Add an if/else to process the user input
 const getUserChoice = userInput => {
     userInput = userInput.toLowerCase();
-    if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors') {
+    if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb') {
         return userInput;
       }
       else {
@@ -63,6 +63,9 @@ const determineWinner = (userChoice, computerChoice) => {
         else {
             return 'Congratulations, you won!';
         }
+    }
+    if (userChoice === 'bomb') {
+        return "Congratulations, you won!";
     }
 };
 
